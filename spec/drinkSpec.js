@@ -12,15 +12,15 @@ describe("Drink Test", function() {
             expect(whatCanIDrink(15)).toBe("Drink Coke");
         });
         
-        it('should return "Drink Toddy" if age is between 18 and 20', function() {
+        it('should return "Drink Beer" if age is between 18 and 20', function() {
             expect(whatCanIDrink(19)).toBe("Drink Beer");
         });
         
-        it('should return "Drink Toddy" if age is between 21 and 129', function() {
+        it('should return "Drink Whiskey" if age is between 21 and 129', function() {
             expect(whatCanIDrink(22)).toBe("Drink Whiskey");
         });
         
-        it('should return "Drink Toddy" if age is 130 or greater', function() {
+        it('should return "Sorry. I can’t tell what drink because that age is incorrect!" if age is 130 or greater', function() {
             expect(whatCanIDrink(131)).toBe("Sorry. I can’t tell what drink because that age is incorrect!");
         });
     });
