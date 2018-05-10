@@ -25,3 +25,27 @@ describe("Drink Test", function() {
         });
     });
 });
+
+describe("FizzBuzz Test", function() {
+    describe("The fizzBuzz() function", function() {
+        it('Should return "Fizz" if the number is evenly divisible by 3.', function() {
+            expect(fizzBuzz(3)).toBe("Fizz");
+        });
+        
+        it('Should return "Buzz" if the number is evenly divisible by 5.', function() {
+            expect(fizzBuzz(5)).toBe("Buzz");
+        });
+        
+        it('Should return "FizzBuzz" if the number is divisible by both 3 and 5.', function() {
+            expect(fizzBuzz(15)).toBe("FizzBuzz");
+        });
+        
+        it('Should return the submitted number if the number is divisible by neither 3 nor 5.', function() {
+            expect(fizzBuzz(16)).toBe(16);
+        });
+        
+        it('Should return "The argument you submit must be a number!" if the type of argument submitted is anything other than a number.', function() {
+            expect(fizzBuzz("bacon")).toBe("The argument you submit must be a number!");
+        });
+    });
+});

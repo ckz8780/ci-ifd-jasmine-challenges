@@ -17,3 +17,19 @@ function whatCanIDrink(age) {
         return "Sorry. I can’t tell what drink because that age is incorrect!";
     }
 }
+
+function fizzBuzz(num) {
+    if(typeof(num) == 'number') {
+        if (num % 3 == 0 && num % 5 == 0) {
+            return "FizzBuzz";
+        } else if (num % 3 == 0) {
+            return "Fizz";
+        } else if (num % 5 == 0) {
+            return "Buzz";
+        } else {
+            return num;
+        }
+    } else { 
+        return "The argument you submit must be a number!";
+    }
+}
