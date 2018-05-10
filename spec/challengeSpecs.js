@@ -36,11 +36,11 @@ describe("FizzBuzz Test", function() {
             expect(fizzBuzz(5)).toBe("Buzz");
         });
         
-        it('Should return "FizzBuzz" if the number is divisible by both 3 and 5.', function() {
+        it('Should return "FizzBuzz" if the number is evenly divisible by both 3 and 5.', function() {
             expect(fizzBuzz(15)).toBe("FizzBuzz");
         });
         
-        it('Should return the submitted number if the number is divisible by neither 3 nor 5.', function() {
+        it('Should return the submitted number if the number is evenly divisible by neither 3 nor 5.', function() {
             expect(fizzBuzz(16)).toBe(16);
         });
         
