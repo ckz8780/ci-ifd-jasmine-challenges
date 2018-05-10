@@ -1,5 +1,5 @@
 describe("Drink Test", function() {
-    describe("whatCanIDrink function", function() {
+    describe("whatCanIDrink() function", function() {
         it('should return "Sorry. I can’t tell what drink because that age is incorrect!" if age is less than 0', function() {
             expect(whatCanIDrink(-1)).toBe("Sorry. I can’t tell what drink because that age is incorrect!");
         });
